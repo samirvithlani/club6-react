@@ -1,0 +1,36 @@
+frontend : an,react,js, jq....
+backend  : spring,.....,hibernate, node js,nest, larv,...
+
+REACT JS :
+facebook :
+
+spa: single page application, index.html
+
+node install :
+
+d:
+ projects
+   node
+   react-js
+      open cmd
+
+npm:
+submodule
+
+npx create-react-app learning24
+
+index.js : -App.js
+index.html
+
+mvc :model view controller:
+
+mvvm: model view view model
+
+component arch:
+
+we can create 2 type of comp in react 
+class based comp     :
+function based comp  : 16.8 : hooks
+
+
+jsx:
