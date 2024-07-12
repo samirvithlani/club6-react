@@ -34,3 +34,16 @@ function based comp  : 16.8 : hooks
 
 
 jsx:
+
+
+function keyword
+arrow functions
+
+for import
+export const  : {Header} 
+export default : Header
+
+styling:
+1. inline
+2. internal
+3. external
