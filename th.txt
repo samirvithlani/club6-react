@@ -47,3 +47,15 @@ styling:
 1. inline
 2. internal
 3. external
+
+
+app-->product -->productList
+
+parent componet child component :
+props
+:props statnd for properties
+props are immutable
+props are read only
+props are used to pass data from parent to child component
+
+context api

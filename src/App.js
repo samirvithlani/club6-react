@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import {Header} from "./components/Header"
 import Content from "./components/Content";
+import { Products } from "./components/products/Products";
 
 function App() {
  
@@ -10,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Content></Content>
+      <Products></Products>
+      {/* <Content></Content> */}
     </div>
   );
 }
