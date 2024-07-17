@@ -9,6 +9,15 @@ export const ProductList = (props) => {
       <h2>product Price = {props.price}</h2>
       <h3>Name {props.prod.name}</h3>
       <h4>{props.prod.price}</h4>
+      <ul>
+        {props.productArray.map((pro) => {
+          return (
+            <li>
+              {pro.id} -- {pro.name}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };

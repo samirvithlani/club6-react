@@ -29,7 +29,7 @@ export const Products = () => {
     <div>
       <h1>PRODUCTS COMPONENT</h1>
 
-      <ul>
+      {/* <ul>
         {
             productArray.map((p)=>{
                 return(
@@ -37,10 +37,10 @@ export const Products = () => {
                 )
             })
         }
-      </ul>
+      </ul> */}
 
       {/* parent child */}
-      {/* <ProductList name={pName} price={pprice} prod={prod}></ProductList> */}
+      <ProductList name={pName} price={pprice} prod={prod} productArray = {productArray}></ProductList>
     </div>
   );
 };
