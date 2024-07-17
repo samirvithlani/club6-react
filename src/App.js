@@ -5,6 +5,7 @@ import {Header} from "./components/Header"
 import Content from "./components/Content";
 import { Products } from "./components/products/Products";
 import { UseStateDemo } from "./components/UseStateDemo";
+import { UseStateDemo2 } from "./components/UseStateDemo2";
 
 function App() {
  
@@ -12,7 +13,8 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <UseStateDemo></UseStateDemo>
+      {/* <UseStateDemo></UseStateDemo> */}
+      <UseStateDemo2></UseStateDemo2>
       {/* <Products></Products> */}
       {/* <Content></Content> */}
     </div>
