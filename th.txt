@@ -69,3 +69,12 @@ hook: built in function
 use keyword is used to create hooks
 useState
 
+npm install react-router-dom
+
+
+package: react-router-dom v 6.x..
+<BrowseRouter> :- it is used to create routing in react
+<Routes> :- it is used to create routes
+<Route> :- it is used to create route
+
+
