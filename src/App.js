@@ -14,6 +14,7 @@ import { NetflixMovies } from "./netflix/NetflixMovies";
 import { Error404 } from "./Error404";
 import { PlayShow } from "./netflix/PlayShow";
 import { FormDemo1 } from "./forms/FormDemo1";
+import { FormDemo2 } from "./forms/FormDemo2";
 
 function App() {
  
@@ -28,6 +29,7 @@ function App() {
         <Route path ="/netflix/movies" element = {<NetflixMovies/>}></Route>
         <Route path = "/netflix/playshow/:id" element = {<PlayShow/>}></Route>
         <Route path="/formdemo1" element = {<FormDemo1/>}></Route>
+        <Route path="/formdemo2" element = {<FormDemo2/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>
