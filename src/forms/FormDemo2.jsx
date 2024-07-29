@@ -80,7 +80,7 @@ export const FormDemo2 = () => {
           <input type="submit" value="submit" />
         </div>
       </form>
-      {isSubbmited && 
+      {isSubbmited  &&
         <div style={{ color: output.color }}>
           <h2>OUTPUT</h2>
           <p>FIRST NAME:{output.fname}</p>

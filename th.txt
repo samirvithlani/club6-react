@@ -81,3 +81,30 @@ package: react-router-dom v 6.x..
 react-hook-form
 
 
+
+
+handleSubmit(cb){
+
+  //useSatte [] ... event ->
+  data fname, lname, email
+
+  {obj}
+
+  cb(obj)
+
+
+}
+
+
+{
+  required:{
+    value:true,message:"Name is Required*"
+    }
+}
+
+{
+            required:{
+                value:true,
+                message:"Email is Required*"
+            },
+}
