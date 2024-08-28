@@ -3,11 +3,18 @@ import React, { useState } from 'react'
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { MyLoader } from '../components/MyLoader';
+import { Button, Modal } from 'react-bootstrap';
+import { set } from 'react-hook-form';
 
 export const ApiDemo1 = () => {
     const [message, setmessage] = useState("")
     const [users, setusers] = useState([])
     const [isLoading, setisLoading] = useState(false)
+    const [show, setshow] = useState(false)
+    const [singleUser, setsingleUser] = useState({})
+    const handleClose = ()=>{
+        setshow(false)
+    }
 
     const deleteUser = async(id)=>{
         //alert("delete user"+id)
@@ -36,6 +43,16 @@ export const ApiDemo1 = () => {
         setisLoading(false)
 
 
+    }
+
+
+    const detailUser = async(id)=>{
+        //alert("detail user"+id)
+        //getUserById
+        const res  = await axios.get("https://node5.onrender.com/user/user/"+id)
+        console.log("detail res",res.data)
+        setsingleUser(res.data.data)
+        setshow(true)
     }
   return (
     <div>
@@ -82,6 +99,8 @@ export const ApiDemo1 = () => {
                                 <td>{user.isActive?"Active":"Inactive"}</td>
                                 <td>
                                     <button onClick={()=>{deleteUser(user._id)}} className='btn btn-danger'>DELETE</button>
+                                
+                                    <button onClick={()=>{detailUser(user?._id)}} className='btn btn-info' style={{marginLeft:"5px"}}>DETAIL</button>
                                 </td>
                             </tr>
                         )
@@ -89,6 +108,23 @@ export const ApiDemo1 = () => {
                 }
                 </tbody>
         </table>
+        <Modal show={show} onHide={handleClose} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>USER DERAIL</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <p>{singleUser.name}</p>
+            <p>{singleUser.age}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          {/* <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
     </div>
   )
 }
