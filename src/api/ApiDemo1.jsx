@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { MyLoader } from '../components/MyLoader';
 import { Button, Modal } from 'react-bootstrap';
 import { set } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 
 export const ApiDemo1 = () => {
     const [message, setmessage] = useState("")
@@ -101,6 +102,7 @@ export const ApiDemo1 = () => {
                                     <button onClick={()=>{deleteUser(user._id)}} className='btn btn-danger'>DELETE</button>
                                 
                                     <button onClick={()=>{detailUser(user?._id)}} className='btn btn-info' style={{marginLeft:"5px"}}>DETAIL</button>
+                                    <Link to ={`/updateuser/${user._id}`} className='btn btn-warning' style={{marginLeft:"5px"}}>UPDATE</Link>
                                 </td>
                             </tr>
                         )
