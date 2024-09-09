@@ -22,6 +22,7 @@ import { FormDemo6 } from "./forms/FormDemo6";
 import { ApiDemo1 } from "./api/ApiDemo1";
 import { ApiDemo2 } from "./api/ApiDemo2";
 import { UpdateUser } from "./api/UpdateUser";
+import { Omdb } from "./api/Omdb";
 
 function App() {
  
@@ -43,6 +44,7 @@ function App() {
         <Route path ="/apidemo1" element = {<ApiDemo1/>}></Route>
         <Route path ="/apidemo2" element = {<ApiDemo2/>}></Route>
         <Route path = "/updateuser/:id"element = {<UpdateUser/>}></Route>
+        <Route path ="/omdb" element ={<Omdb/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>
