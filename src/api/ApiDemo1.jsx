@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { MyLoader } from '../components/MyLoader';
@@ -8,6 +8,16 @@ import { set } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 
 export const ApiDemo1 = () => {
+
+  useEffect(() => {
+    
+    getApiCall()
+  
+    
+  }, [])
+  
+
+
     const [message, setmessage] = useState("")
     const [users, setusers] = useState([])
     const [isLoading, setisLoading] = useState(false)
