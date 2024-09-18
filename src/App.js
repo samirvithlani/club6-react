@@ -24,6 +24,7 @@ import { ApiDemo2 } from "./api/ApiDemo2";
 import { UpdateUser } from "./api/UpdateUser";
 import { Omdb } from "./api/Omdb";
 import { UseEffectDemo } from "./components/UseEffectDemo";
+import { ProductComponent } from "./components/ProductComponent";
 
 function App() {
  
@@ -47,6 +48,7 @@ function App() {
         <Route path = "/updateuser/:id"element = {<UpdateUser/>}></Route>
         <Route path ="/omdb" element ={<Omdb/>}></Route>
         <Route path ="/useeffect" element ={<UseEffectDemo/>}></Route>
+        <Route path = "/product" element ={<ProductComponent/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>

@@ -108,3 +108,9 @@ handleSubmit(cb){
                 message:"Email is Required*"
             },
 }
+
+
+props
+context api
+
+redux : state management
