@@ -25,6 +25,8 @@ import { UpdateUser } from "./api/UpdateUser";
 import { Omdb } from "./api/Omdb";
 import { UseEffectDemo } from "./components/UseEffectDemo";
 import { ProductComponent } from "./components/ProductComponent";
+import { DataComponenent } from "./components/DataComponenent";
+import { Data1 } from "./components/Data1";
 
 function App() {
  
@@ -49,6 +51,8 @@ function App() {
         <Route path ="/omdb" element ={<Omdb/>}></Route>
         <Route path ="/useeffect" element ={<UseEffectDemo/>}></Route>
         <Route path = "/product" element ={<ProductComponent/>}></Route>
+        <Route path="/data" element ={<DataComponenent/>}></Route>
+        <Route path="/data1" element ={<Data1/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>
